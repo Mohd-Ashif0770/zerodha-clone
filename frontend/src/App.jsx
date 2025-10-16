@@ -9,7 +9,7 @@ import SupportPage from './landing_page/support/SupportPage'
 import Navbar from './landing_page/Navbar'
 import Footer from './landing_page/Footer'
 import PageNotFound from './landing_page/PageNotFound'
-import Login from './landing_page/login'
+import Login from './landing_page/Login'
 
 function App() {
   

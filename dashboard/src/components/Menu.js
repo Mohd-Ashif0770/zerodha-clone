@@ -20,7 +20,7 @@ const Menu = () => {
   const handleLogOut = async () => {
     try {
       await axios.post("http://localhost:5000/logout", {}, { withCredentials: true });
-      window.location.href = "http://localhost:5173";
+      window.location.href = "https://zerodha-clone-kappa-eight.vercel.app/";
     } catch (error) {
       console.error("Logout failed:", error);
     }

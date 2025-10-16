@@ -1,0 +1,10 @@
+
+
+table td, th{
+    font-size: 0.85rem;
+    padding: 1.1rem !important
+}
+
+table th{
+    font-weight: 600;
+}

@@ -1,0 +1,55 @@
+
+.footer-links a{
+    font-size: 0.8rem;
+    color: #666 !important;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: -3px;
+   
+    
+}
+.footer-anchor{
+    color: rgb(36, 92, 194) !important;
+    font-size: 0.7rem;
+}
+
+.footer-bottom-links a{
+    font-size: 0.7rem;
+    color: #908d8d !important;
+    margin-right: 10px;
+    margin-top: -3px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: -15px;
+    
+}
+
+.footer-bottom-links a:hover{
+    color: rgb(36, 92, 194) !important;
+    cursor: pointer;
+}
+ a:hover{
+    color: rgb(36, 92, 194) !important;
+    cursor: pointer;
+}
+
+small{
+    color: #666 !important;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.fa-brands{
+    font-size: 1.2rem;
+    color: #666 !important;
+}
+
+.footer-para p{
+    color: #8f8d8d !important;
+    font-size: 0.7rem;
+    font-weight: 500;
+    /* margin-top: 50px; */
+}

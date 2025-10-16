@@ -1,0 +1,65 @@
+/*! Dropdown */
+.dropDown {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  background-color: #323232;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0.5rem;
+  text-align: left;
+  width: 150px;
+  z-index: 100;
+}
+
+.dropDownItem {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  /* margin: 39px; */
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.dropDownItem:hover {
+  background-color: #454545;
+  border-radius: 5px;
+}
+
+.userIconDiv,
+.navbar span {
+  margin: 1rem 2rem;
+}
+
+.userIcon {
+  background-color: #b3b5b7;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* responsive dropdown and menu spacing */
+@media (max-width: 768px) {
+  .dropDown {
+    top: 3.5rem;
+    right: 1rem;
+    width: 220px;
+  }
+
+  .menus {
+    display: none; /* hide full menu on small screens */
+  }
+
+  .userIconDiv {
+    margin-right: 1rem;
+  }
+}
+
+/* hambugger */
+
+

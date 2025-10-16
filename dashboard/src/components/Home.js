@@ -14,7 +14,7 @@ const Home = () => {
         // authenticated, do nothing
       } catch (err) {
         // not authenticated -> redirect to landing login (Vite dev server)
-        window.location.href = "http://localhost:5173/login";
+        window.location.href = "https://zerodha-clone-kappa-eight.vercel.app/";
       }
     };
     checkAuth();

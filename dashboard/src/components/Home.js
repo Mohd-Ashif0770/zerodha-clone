@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        await axios.get("http://localhost:5000/verify", {
+        await axios.get("https://zerodha-clone-q795.onrender.com/verify", {
           withCredentials: true,
         });
         // authenticated, do nothing

@@ -8,7 +8,8 @@ router.post("/login", login);
 router.post("/logout", logout);
 
 // Verify authentication (used by frontends to check session)
-router.get("/verify", (req, res) => {
+// Protected verify endpoint — frontends should call this to confirm session
+router.get("/verify", verifyAuth, (req, res) => {
   return res.status(200).json({ message: "Authenticated", userId: req.userId });
 });
 

@@ -26,9 +26,9 @@ module.exports.signup = async (req, res) => {
     // res.cookie("token", token, { httpOnly: true });
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false, // true if using HTTPS in production
-      sameSite: "lax", // allows cross-port requests
-      // path: "/", // ✅ make it accessible on all paths
+      secure: true, // true if using HTTPS in production
+      sameSite: "none", // allows cross-port requests
+      path: "/", // ✅ make it accessible on all paths
     });
 
     res.send("User Registration complete");
@@ -58,8 +58,8 @@ module.exports.login = async (req, res) => {
     // res.cookie("token", token, { httpOnly: true });
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false, // true if using HTTPS in production
-      sameSite: "lax", // allows cross-port requests
+      secure: true, // true if using HTTPS in production
+      sameSite: "none", // allows cross-port requests
       path: "/", // ✅ make it accessible on all paths
     });
 

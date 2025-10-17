@@ -11,13 +11,13 @@ export default function Login() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/login",
+        "https://zerodha-clone-q795.onrender.com/login",
         { email, password },
         { withCredentials: true }
       );
       
       alert("Login successful!");
-      window.location.href = "zerodha-clone-okb8.vercel.app"; // 👈 redirect to dashboard
+      window.location.href = "https://zerodha-clone-okb8.vercel.app"; // 👈 redirect to dashboard
     } catch (err) {
       alert(err.response?.data?.message || "Login failed");
     }

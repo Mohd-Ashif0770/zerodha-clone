@@ -10,7 +10,7 @@ export default function SignupPage() {
     e.preventDefault();
     try {
       await axios.post(
-        "http://localhost:5000/signup",
+        "https://zerodha-clone-q795.onrender.com/signup", //any need to replace it with render backend url.
         { email, username, password },
         { withCredentials: true }
       );

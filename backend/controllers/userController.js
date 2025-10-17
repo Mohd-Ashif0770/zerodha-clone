@@ -33,7 +33,10 @@ module.exports.signup = async (req, res) => {
 
     res.send("User Registration complete");
   } catch (err) {
-    console.log(err.message);
+    console.error("Signup error:", err);
+    return res
+      .status(500)
+      .json({ message: err.message || "Internal server error" });
   }
 };
 
@@ -65,7 +68,10 @@ module.exports.login = async (req, res) => {
 
     res.send("Login Successfull");
   } catch (err) {
-    console.log(err.message);
+    console.error("Login error:", err);
+    return res
+      .status(500)
+      .json({ message: err.message || "Internal server error" });
   }
 };
 

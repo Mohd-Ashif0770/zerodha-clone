@@ -17,7 +17,7 @@ export default function Login() {
       );
       
       alert("Login successful!");
-      window.location.href = "http://localhost:3000/"; // 👈 redirect to dashboard
+      window.location.href = "zerodha-clone-okb8.vercel.app"; // 👈 redirect to dashboard
     } catch (err) {
       alert(err.response?.data?.message || "Login failed");
     }
